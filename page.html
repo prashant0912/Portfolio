@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    #navbar{
+        width:100%;
+        height:70px;
+        margin-bottom: 20px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;;
+        top: 0;
+        bottom:0;
+        position:fixed;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    #box{
+        width:40%;
+        height:50px;
+        margin-left:60%;
+        display:flex
+    }
+    #box>div{
+        margin-top: 18px;
+        margin-left:8%
+        
+    }
+    .nav_box{
+        font-size: 20px;
+        color:black;
+        text-decoration: none;
+    }
+    .nav_box:hover{
+        text-decoration: underline;
+    }
+    #home{
+        width:100%;
+        height:550px;
+        display:flex;
+    }
+    #home1{
+        width:50%;
+        height:400px;
+        margin-left:15%;
+        margin-top:4%
+}
+h1{
+    font-size: 50px;
+}
+#name{
+    color:slateblue
+}
+#home2{
+    width:350px;
+    height:350px;
+    margin-top: 90px;
+}
+#resume{
+    background-color:green;
+    font-size: 20px;
+    color:white;
+    border:none;
+    padding:10px 30px;
+    border-radius: 20px;
+}
+#resume:hover{
+    cursor: pointer;
+    background-color: white;
+    color:blue;
+    border:1px solid blue
+}
+#social{
+    width:10%;
+    height:100px;
+    margin-left:17%;
+    margin-top: 6%;
+}
+#about{
+    width:100%;
+    height:800px;
+    text-align: center;
+    
+}
+#about1{
+    width:50%;
+    height:200px;
+    margin:auto;
+    margin-top: 8%;
+}
+.head{
+    font-size: 50px;
+    color:blue;
+    text-decoration:underline;
+}
+#skills{
+    width:100%;
+    height:850px;
+    text-align: center;  
+}
+
+.skill_later{
+    display:flex;
+    margin:5%;
+    margin-left:10%
+}
+.lang{
+    margin-left: 20px;
+    font-size: 20px;
+    color:black
+}
+.skills1{
+    width:45%;
+    height:160px;
+    margin:auto;
+    margin-top:5%;
+    display:flex
+}
+#heading{
+    text-align: center;
+}
+.skill{
+    width:200px;
+    height:100px;
+}
+.skill:hover{
+    width:240px;
+    height:140px;
+}
+.skills3{
+    width:45%;
+    height:160px;
+    margin-left:33%;
+    margin-top:5%;
+    display:flex
+}
+@media(max-width:768px){
+    #home{
+        display:block
+    }
+    #home1{
+        width:100%;
+    }
+    #home2{
+        width:100%
+    }
+    #about{
+        margin-top: 110%;
+    }
+    #social{
+        margin-top: -45%;
+        margin-left:70%
+    }
+    #skills1{
+        display: block;
+        margin:none
+    }
+    #projects{
+        display:flex;
+        flex-direction: column;
+    }
+    #footer{
+        margin-top: 30px;
+    }
+
+}
+#projects{
+    width:100%;
+    height:480px;
+    display: flex;
+    text-align: center;
+}
+#projects>div{
+    width:50%;
+    height:480px;
+    
+}
+#head1{
+    font-size: 50px;
+    color:blue;
+    text-decoration:underline;
+    margin-left: 43%;
+}
+#data{
+    width:100%;
+    height:400px;
+    display:flex
+}
+#data>div{
+    width:50%;
+    height:400px;
+    
+
+}
+#head3{
+    margin-left: 0px;
+    font-size: 30px;
+}
+.para{
+    font-size: 18px;
+}
+#footer{
+    width: 100%;
+    height:400px;
+    background-color: #0e2431;
+    margin-top:-32px;
+
+}
+.connect{
+    margin-left: 40%;
+    color:skyblue;
+    text-decoration: underline;
+}
+.connect1{
+    margin-left: 40%;
+    color:white;
+    margin-top: 10%;
+    font-size: 40px;
+}
+#social1{
+    width:10%;
+    height:100px;
+    margin-left:45%;
+    margin-top: 6%;
+    margin-top: -1%;
+
+}
+#social2{
+    width:10%;
+    height:100px;
+    margin-left:50%;
+    margin-top: 6%;
+    margin-top: -7%;
+
+}
+#right{
+    margin-top: -4%;
+    color:white;
+    margin-left: 40%;
+    font-weight: bold;
+}
+.code{
+    background-color:blue;
+    font-size: 20px;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius: 20px;
+}
+.code:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+    
+
+
+
+
+    
+</style>
+<body>
+    <!-- navbar -->
+    <div id = "navbar">
+    <div id = "box">
+        <div ><a class = "nav_box" href="#home">Home</a></div>
+        <div class = "nav_box"><a class = "nav_box"href="#about">About</a></div>
+        <div ><a class = "nav_box" href="#skills">Skills</a></div> 
+        <div > <a class = "nav_box" href="#head1">Projects</a></div>
+        <div ><a class = "nav_box" href="#footer">Contacts</a></div>
+    </div>
+    </div>
+
+<div id = "home">
+    <div id = "home1">
+        <h1>Hi 👋,</h1>
+        <h1>I'm <h1 id = "name">Prashant</h1></h1>
+        <h1>MERN Developer</h1>
+        <button id = "resume" onclick = linkedin()>Resume</button>
+    </div>
+    <div id = "home2">
+        <img src="https://user-images.githubusercontent.com/65214761/158836676-93b9e7fc-d7d2-4c4d-9e1f-a8c5d56c7eaf.png" alt="" width="400px",height="150px">
+    </div>
+</div>
+
+<div id = "social">
+ <a href = "http://www.linkedin.com/in/prashant0912"><img src = "data:image/png;base64,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" width = "35px"></a>
+        <a href="https://github.com/prashant0912"><img src="data:image/png;base64,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" alt="" width = "35px"></a>
+</div>
+
+<div id = "about">
+<h1 class = "head">About</h1>
+<div id = "about1">
+<h2>I'm Prashant Maurya</h2>
+<br>
+<h3>Adaptable to learn new technologies and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.</h3>
+<br>
+<h3>Drop a mail @ mauryaprashant98@gmail.com</h3>
+<br>
+</div>
+</div>1
+<div id = "skills">
+    <span><h1 class = "head">Skills</h1></span>
+    <div class ="skills1">
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg" alt="">
+            <p class = "lang">HTML</p></div>
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg" alt="">
+                <p class = "lang">CSS</p></div>
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg" alt="">
+                <p class = "lang">Javascript</p></div>
+    </div>
+    <div class ="skills1">
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/nodejs-icon.3dc364b8.svg" alt="">
+            <p class = "lang">Node JS</p></div>
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/express.7e85c513.svg" alt="">
+            <p class = "lang">Express JS</p></div>
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/redux.a9567540.svg" alt="">
+            <p class = "lang">Redux</p></div>
+    </div>
+
+    <div class ="skills3">
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/github-icon.04ed74f3.svg" alt="">
+            <p class = "lang">Github</p></div>
+        <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/mongodb.153b7b44.svg" alt="">
+            <p class = "lang">Mongo DB</p></div>
+    </div>
+</div>
+<span><h1 id = "head1">Projects</h1></span>
+<div id = "projects">
+    <br>
+    <div><img src="https://user-images.githubusercontent.com/65214761/158760636-b3598135-0813-4cbd-847f-1104ac0a7091.png" alt="" width="600px" height="450px"></div>
+    <div><img src="https://user-images.githubusercontent.com/65214761/159109761-6261d441-3321-449d-ba61-acc0f53b3f55.png" alt="" width="600px" height="450px"></div>
+</div>
+<div id = "projects">
+    <br>
+    <div><h1 id = "head3">Revv Clone</h1>
+    <p class = "para">This project is a clone of the well-known car rental platform revv, 
+
+        revv cars is an Indian car-rental startup that offers multiple options to meet all your self-drive needs.
+    <br><br><br><br>
+     A collaborative project, built in 5 days by a team of 5 developers</p>
+<p class = "para">Html | CSS | Javascript | Mongo DB | Express JS</p>
+<a href = "https://github.com/prashant0912/Revv-Rentals-clone-2.0"><button class = "code">code</button></a>
+<a href = "https://revv-rentals-clone-2-0.vercel.app/"><button class = "code">Live</button></div></a>
+
+    <div>
+        <h1 id = "head3">Movie Search-App</h1>
+        <p class = "para">This is a movie search App, we can search any movie we want and it  shows that movies's title,poster ,year of release and rating of searched movie.<br><br><br>
+         An individual  project, built in 1 day from scratch</p>
+    <p class = "para">Html | CSS | Javascript |</p>
+    <a href = "https://github.com/prashant0912/MovieSearch-App"><button class = "code">code</button></a>
+<a href = "https://movie-search-mocha-phi.vercel.app/"><button class = "code">Live</button></div></a>
+    </div>
+</div>
+</div>
+<div id = "footer">
+    <h1 class = "connect">Let's Connect</h1>
+    <h2 class = "connect1">Prashant Maurya</h2>
+    <div id = "social1">
+        <a href = "http://www.linkedin.com/in/prashant0912"><img src = "data:image/png;base64,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" width = "35px"></a>
+               
+       </div>
+       <div id = "social2">
+        <a href = "mailto:mauryaprashant98@gmail.com" ><img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAdVBMVEX/////AADv7+/19fX/NTX/Ojr/bGz/e3v/nJz/Pj7/X1//+vr/YmL/ERH/aWn/XV3/6Oj/UlL/8PD/WVn/SUn/QkL/Hh7/9fX/Ly//c3P/wcH/iIj/srL/k5P/zMz/gID/1tb/3t7/qKj/urr/Jib/oqLv+flec5cNAAAEW0lEQVRoge2ZWWOzKhCGpRXcEEER17gl6f//iR+mTYNZELTn6uS9MwEeB4aZAR3nrbfeeuut3Yro2B2naWrrgab/CaDzcRCDXwletePfImp0AkBB/Age6F8R6EECYiBY03Y0mn9Jx3qq3AsnqP8E0c+EvOmKh3+OeDaubPciokMsBPC6V28wBXIW4au/zdS5EtFrJ76GEoMezDSXB05xteqsRyEnbasxlAthtK6RXDbgb2IM5Sn2DKehEzGoNjA6UQJzv0lzAJg9A5Qnq3lGcm9aMgZRloNdlx6AzKoDdd2TJWP2ReDZtOcQWDMcBwMwmbeuytPRnuE4bgwG07a1KJstDIfKGGTYtIAuizZBnCMAhq/XbFj0q0gMjFLZULqHrQwnjePEpF0Fy42TNcs3ipVj6Vr44aOMTOkDuMMQxzmD9VWJBNwWtH8HiON+rU0L4S0RjlPkfBroa5xuqa2JwRqE5Oj2IEAwfH2s6kuWM7dsMgCwkuloHigBZS5G/DXKF+WyGfntFAXxSv6qg1wpG2Apu/OVAq6VbWJXsb+PS32PJlcdEMKeySF0CbLAs7WeCqnjWO9fJFd3O3TPjpxvTcXTyUpFZrcFhIpYm7dTnqsxHrr+nCRlef1iF8s8BTy5rRYQBwptlBzzQLX0AvkZ6lnr+FpwLSFEaDd9nUN1Zn4gMsFcJuVO/uxU382XkIPguqDRcld9vEKclMgBl7H54rjXuV9CWuHqys4zXxRPv5BvR+VK1/n5NtQSchQnndv7HL+ASJ9Q3jzNZse9NVxCuljoIAdG1EcV8r0G+PLy9WzGoPz1ANFtFF8HkTlT7u16rq8BWEbaO4jQWnJmL6fronn4Cj6eFO4h2jWZ2KuFv/a/nE7R3a8PC1/qIEeW6yFOQcCToHHvwoHOhTvGn23GhcYnA9xtxpP2FDEyNqxBnmkJQSV52VIqTdhDgLSH8FJfuHnZMtRvgdC1ct3PVEu3QepTqU9aXZap6XcTpCnz1y1npUmmmCohBsXKx8dnpUAi5q5V9n2opKdcTEaQr17ceg1luVYN10mmFneFSW33+UnPSnHnrhQrUiw8r7bRqXDh+snDD5MdtzEyxkJt4PoWzcI9R4fIDUzO2Qec7TDFh67JeY6GePtxjsJg9eBw0YSTYSuk4oHZ3WeESLVxwo4wMF3QIcPbTls05+Z3OGccbrr2YBxaXBT3JBvsGYhb3RKnFcLWlIbndrNMCSKWlIZz22sfmiBsdT3ocW51pfZNQSi0uOhMmLUdF4qHyMHwM0nNMr4teBcNQZWJuxSNZGzy+VktRqRZ9fw2y1i444MN7QnC+i8xdcgyti/POTUiKDx0L86AtMUsYd7u70FFKzGk8rt7H4jGo5dlEjHsRVxGqyuMJMk7HLsxLaToUE8NSZIwYc3ffT0bJ+nPUhiHmVSSYKkE9/Wu+7dH0e7cVIjMo4cYI6+Zhl0Fx0sVKR0HqZGmf2zCW2+99db/VP8ARtZEVdp95qoAAAAASUVORK5CYII=" width = "35px"></a>
+        </div>
+    <p id = "right">© 2022 copyright all right reserved</p>
+
+</div>
+
+
+
+    
+    
+</body>
+</html>
+<script>
+    const linkedin = ()=>{
+        window.location.href = "https://drive.google.com/file/d/1d9u_VODGrjLMm6P8ou-s9VWcFrB_rTBp/view?usp=sharing";
+    }
+</script>
+
+
+
+
+
+
+
+<!-- <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg" alt="">
+    <p class = "lang">HTML</p></div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg" alt="">
+    <p class = "lang">CSS</p></div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg" alt="">
+    <p class = "lang">Javascript</p></div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/react.e27571ea.svg" alt="">
+    <p class = "lang">React</p></div>
+</div>
+<div id = "skill2">
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/nodejs-icon.3dc364b8.svg" alt="">
+        <p class = "lang">Node JS</p></div>
+    </div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/express.7e85c513.svg" alt="">
+        <p class = "lang">Express JS</p></div>
+    </div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/redux.a9567540.svg" alt="">
+        <p class = "lang">Redux</p></div>
+    </div>
+    <div><img class = "skill"src="https://portfolio-saravanakumarjn.vercel.app/static/media/github-icon.04ed74f3.svg" alt="">
+    <p class = "lang">Github</p></div></div>
+</div> -->
+<!-- <div id = "data">
+    <div>
+        <h2 id = "head3">Revv Clone</h2>
+    </div>
+    <div>
+    
+    </div> -->
+    
